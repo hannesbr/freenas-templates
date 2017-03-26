@@ -1,0 +1,51 @@
+{
+	"template": {
+		"name": "Server",
+		"author": "Hannes",
+		"description": "Custom Debian 8.7.1",
+		"created_at": {
+			"$date": "2017-03-25 22:53:01.324000"
+		},
+		"updated_at": {
+			"$date": "2017-03-26 00:01:30.549000"
+		},
+		"files": true,
+		"fetch": [
+			{
+				"name": "disk0",
+				"url": "",
+				"sha256": "",
+				"size": 0
+			}
+		]
+	},
+	"config": {
+		"ncpus": 4,
+		"bootloader": "GRUB",
+		"memsize": 1024,
+		"boot_device": "disk0",
+		"boot_directory": "grub"
+	},
+	"devices": [
+		{
+			"type": "NIC",
+			"name": "eth0",
+			"properties": {
+				"device": "VIRTIO",
+				"mode": "BRIDGED",
+			},
+
+		},
+		{
+			"type": "DISK",
+			"name": "disk0",
+			"properties": {
+				"size": 0,
+				"mode": "VIRTIO",
+				"source": "disk0"
+			},
+		}
+	],
+	"guest_type": "linux64",
+}
+
