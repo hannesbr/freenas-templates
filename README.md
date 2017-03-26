@@ -1,3 +1,2 @@
 # vm-templates
-Username: root
-Password: debian
+VM TEMPLATES!
