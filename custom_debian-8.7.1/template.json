@@ -1,6 +1,6 @@
 {
 	"template": {
-		"name": "Server",
+		"name": "custom_debian-8.7.1",
 		"author": "Hannes",
 		"description": "Custom Debian 8.7.1",
 		"created_at": {
