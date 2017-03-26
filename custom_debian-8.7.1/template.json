@@ -7,22 +7,22 @@
 			"$date": "2017-03-25 22:53:01.324000"
 		},
 		"updated_at": {
-			"$date": "2017-03-26 00:01:30.549000"
+			"$date": "2017-03-26 16:43:30.549000"
 		},
 		"files": true,
 		"fetch": [
 			{
 				"name": "disk0",
-				"url": "",
-				"sha256": "",
-				"size": 0
+				"url": "http://acdriftjunkies.com:8080/vm-images/custom_debian-8.7.1/disk0.img.gz",
+				"sha256": "bb91de8c338d5cfea8aff0d78b7d815d4844eeb557e258ce58cd9a70d9a1d499",
+				"size": 764881266
 			}
 		]
 	},
 	"config": {
-		"ncpus": 4,
+		"ncpus": 1,
 		"bootloader": "GRUB",
-		"memsize": 1024,
+		"memsize": 512,
 		"boot_device": "disk0",
 		"boot_directory": "grub"
 	},
@@ -40,7 +40,7 @@
 			"type": "DISK",
 			"name": "disk0",
 			"properties": {
-				"size": 0,
+				"size": 8589934592,
 				"mode": "VIRTIO",
 				"source": "disk0"
 			},
