@@ -1,0 +1,51 @@
+{
+    "template": {
+        "name": "custom-debian-8.7.1",
+        "author": "Hannes",
+        "description": "Custom Debian 8.7.1",
+        "created_at": {
+            "$date": "2017-03-25T22:53:01"
+        },
+        "updated_at": {
+            "$date": "2017-03-26T18:10:00"
+        },
+        "files": true,
+        "fetch": [
+            {
+                "name": "disk0",
+                "url": "http://webdav:123qwe@acdriftjunkies.com:8080/vm-images/custom-debian-8.7.1/disk0.img.gz",
+                "sha256": "bb91de8c338d5cfea8aff0d78b7d815d4844eeb557e258ce58cd9a70d9a1d499",
+                "size": 764881266
+            }
+        ]
+    },
+    "config": {
+        "ncpus": 1,
+        "bootloader": "GRUB",
+        "memsize": 512,
+        "boot_device": "disk0",
+	"boot_directory": "grub",
+        "boot_partition": "msdos1"
+    },
+    "devices": [
+        {
+            "type": "NIC",
+            "name": "eth0",
+            "properties": {
+                "device": "VIRTIO",
+                "bridge": "default",
+                "mode": "BRIDGED"
+            }
+        },
+        {
+            "type": "DISK",
+            "name": "disk0",
+            "properties": {
+                "size": 8589934592,
+                "mode": "AHCI",
+                "source": "disk0" 
+            }
+        }
+    ],
+    "guest_type": "linux64"
+}
