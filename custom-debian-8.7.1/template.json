@@ -13,7 +13,7 @@
         "fetch": [
             {
                 "name": "disk0",
-                "url": "http://webdav:123qwe@acdriftjunkies.com:8080/vm-images/custom-debian-8.7.1/disk0.img.gz",
+                "url": "ftp://vmi:vmi@acdriftjunkies.com/custom-debian-8.7.1/disk0.img.gz",
                 "sha256": "bb91de8c338d5cfea8aff0d78b7d815d4844eeb557e258ce58cd9a70d9a1d499",
                 "size": 764881266
             }
